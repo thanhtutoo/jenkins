@@ -2,6 +2,7 @@
 ssh root@13.229.17.129 <<EOF       
  cd /html/jenkins
  git pull      
- npm install --production      
+ npm install --production
+ pm restart all     
  exit      
 EOF
