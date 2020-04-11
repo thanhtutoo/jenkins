@@ -1,0 +1,8 @@
+-#!/bin/sh     
+ssh root@3.0.84.74 <<EOF       
+ cd /html/node-app
+ git pull      
+ npm install --production      
+ pm2 restart all
+ exit      
+EOF
